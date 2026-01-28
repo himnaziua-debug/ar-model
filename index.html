@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script type="module"
-src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
 </script>
 
 <style>
@@ -15,12 +15,15 @@ model-viewer { width: 100vw; height: 100vh; }
 </head>
 
 <body>
+
 <model-viewer
   src="model.glb"
   ios-src="model.usdz"
   ar
+  ar-modes="scene-viewer quick-look webxr"
   camera-controls
   auto-rotate>
 </model-viewer>
+
 </body>
 </html>
